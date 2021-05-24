@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Barra de Busca</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- <link rel="stylesheet" href="CSS/reset.css"> -->
+    
+</head>
+
+<body>
+    <div id="search-box">
+        <input id="search-text" type="text" name="" placeholder="Busca">
+        <!-- <button id="btn">Search</button> -->
+        <a id="search-btn" href="#">
+            <i id="btn">🔍</i>
+        </a>
+    </div>
+
+    <div id="result">
+        <ul id="list"></ul>
+    </div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
+
+<!--
+    "content_scripts": [
+        {
+            "matches": ["https://www.google.com"],
+            "css": ["CSS/style.css"],
+            "js": ["script.js"]
+        }
+    ]
+-->
