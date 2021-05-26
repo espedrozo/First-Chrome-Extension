@@ -16,16 +16,13 @@ const paises =
 
 let filter = document.querySelector("#search-text");
 filter.addEventListener("input", function() {
-    // console.log(this.value+"$$$$$$$$$$$$$$$$$$$");
-
+    // console.log(this.value+"$$$$$$");
     // let resp = []
-
     // for (item of paises) {
     //     if (item == filter.value) {
     //         resp.push(item);
     //     }
     // }
-
     // console.log(resp)
 });
 
@@ -36,28 +33,19 @@ botao.addEventListener("click", function(event){
     // console.log("lupa clicada");
     // let listaPaises = paises;
     // console.log(listaPaises);
-    // console.log(this.value+"$$$$$$$$$$$$$$$$$$$");
-
     let resp = []
-
     for (item of paises) {
         if (item == filter.value) {
             resp.push(item);
-        }
-    }
-
+        };
+    };
     console.log(resp)
 });
-
-
-
 
 
 // tests and fails ------------------------------------------------------------------------
 
 // let country = []
-
-
 // function filteredCountry() {
 //     for(let country of paises) {
 //         console.log(country);
@@ -65,9 +53,7 @@ botao.addEventListener("click", function(event){
 //     }
 //     filteredCountry("China");
 // }
-
 // console.log(country)
-
 
 
 // var filter = document.querySelector("#search-text");
@@ -76,14 +62,11 @@ botao.addEventListener("click", function(event){
 //     let filteredText = [1111111];
 //     let inputText = filter;
 //     console.log(inputText+"&&&&&&&&&&&&&&")
-
 //     for(let item of paises) {
 //         if(item == inputText) {
 //             console.log(item + "#########################");
 //             filteredText.push(item);
 //         }
-        
 //     }
-
 // console.log(filteredText+"@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 // });
