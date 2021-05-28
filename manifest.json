@@ -13,7 +13,10 @@
             "css": ["CSS/style.css"],
             "js": ["script.js"]
         }
-    ]
+    ],
 
+    "permissions": [
+        "http://34.122.19.163/*"
+    ]
 
 }

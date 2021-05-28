@@ -43,13 +43,15 @@ botao.addEventListener("click", function(event){
     };
     console.log(resp)
 
+    // var name = document.querySelector("input");
+    // console.log(name);
 
 });
 
 
-const list = document.getElementById("#list");
-let li = document.createElement("li");
-li.append(filter.value);
+
+
+
 
 
 // tests and fails ------------------------------------------------------------------------
