@@ -14,6 +14,8 @@ const paises =
     'Suiça','Suriname','Tailândia','Taiwan','Tanzânia','Togo','Trinidad','Tobago','Tunísia','Turquia','Ucrânia','Uganda','Uruguai','Venezuela','Vietnã','Zaire','Zâmbia','Zimbábue'
 ];
 
+
+
 let filter = document.querySelector("#search-text");
 filter.addEventListener("input", function() {
     // console.log(this.value+"$$$$$$");
@@ -40,7 +42,14 @@ botao.addEventListener("click", function(event){
         };
     };
     console.log(resp)
+
+
 });
+
+
+const list = document.getElementById("#list");
+let li = document.createElement("li");
+li.append(filter.value);
 
 
 // tests and fails ------------------------------------------------------------------------
