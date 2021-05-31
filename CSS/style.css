@@ -1,7 +1,7 @@
 body{
-    background:#8A1AF5;
-    width: 600px;
-    height: 300px;
+    background:white;
+    width: 300px;
+    height: 500px;
 }
 
 body:hover{
@@ -17,19 +17,20 @@ body:hover{
 
 #search-box {
     position: absolute;
-    top: 50%;
+    top: 5%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background: #FF9826;
+    background: lightblue;
     height: 20px;
     border-radius: 40px;
     padding: 10px;
+    width: 240px;
 }
 
-#search-box:hover > #search-text{
+/* #search-box:hover > #search-text{
     width: 240px;
     padding: 0 5px;
-}
+} */
 
 #search-box:hover > #search-btn{
     background: none;
@@ -41,7 +42,8 @@ body:hover{
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background: linear-gradient(#9f40f8, #4e0197);
+    /* background: linear-gradient(white, white); */
+    background: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,10 +55,10 @@ body:hover{
     outline: none;
     float: left;
     padding: 0;
-    color: white;
+    color: black;
     font-size: 15px;
     transition: 0.3s;
     line-height: 20px;
-    width: 0px;
+    width: 200px;
 }
 

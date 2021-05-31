@@ -1,3 +1,5 @@
+// import $ from "jquery";
+
 const paises = 
 [
     'África do Sul','Albânia','Alemanha','Andorra','Angola','Anguilla','Antigua','Arábia Saudita','Argentina','Armênia','Aruba','Austrália','Áustria',
@@ -13,6 +15,8 @@ const paises =
     'Saipan','Samoa Americana','Senegal','Serra Leone','Seychelles','Singapura','Síria','Sri Lanka','St. Kitts & Nevis','St. Lúcia','St. Vincent','Sudão','Suécia',
     'Suiça','Suriname','Tailândia','Taiwan','Tanzânia','Togo','Trinidad','Tobago','Tunísia','Turquia','Ucrânia','Uganda','Uruguai','Venezuela','Vietnã','Zaire','Zâmbia','Zimbábue'
 ];
+
+
 
 
 
@@ -42,6 +46,14 @@ botao.addEventListener("click", function(event){
         };
     };
     console.log(resp)
+
+    chrome.tabs.query({active: true, lastFocusedWindow: true}, tabs => {
+        var url = tabs[0].url;
+        // use `url` here inside the callback because it's asynchronous!
+
+    }).then(() => {
+        console.log(url);
+    })
 
     // var name = document.querySelector("input");
     // console.log(name);
